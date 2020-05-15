@@ -1,0 +1,124 @@
+body{
+  background-color: #dddddd;
+  font-family: "Montserrat";
+}
+
+.score{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.score h2{
+  font-size: 2rem
+}
+.score p{
+  font-size: 1.5rem
+}
+.intro{
+  height:50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: opacity 0.5s ease;
+  /* The 'Let's play' btn is unclickable since it is under the playScreen, so apply: */
+  position: relative;
+  z-index: 1;
+}
+.intro h1{
+  font-size: 3rem;
+}
+.intro button,.options button{
+  width: 170px;
+  height: 60px;
+  font-size: 25px;
+  font-family: "Montserrat";
+  color: #dddddd;
+  background: none;
+  background-color: #5f6769;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.play{
+  position: absolute;
+  top:200px;
+  right: 8px;
+  left: 8px;
+  transition: opacity 0.5s ease 0.5s;
+  opacity: 0;
+}
+.option-buttons{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 300px;
+  transition: opacity 0.5s ease 0.5s;
+  opacity: 0;
+}
+.options{
+  position: absolute;
+  left: 150px;
+  right: 150px;
+  top: 200px;
+}
+
+.winner{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hands,
+.options{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.options button{
+  margin: 30px 50px;
+}
+.hands img{
+  width:15%;
+
+}
+.player-hand{
+  transform: rotateY(180deg);
+}
+
+/* Fade out $ Fade in animation: */
+div.fadeOut{
+  opacity: 0;
+  pointer-events: none;
+}
+div.fadeIn{
+  opacity: 1;
+  pointer-events: all;
+}
+
+@keyframes shakePlayer {
+  0% {transform: rotateY(180deg) translateY(0px);}
+  15% {transform: rotateY(180deg) translateY(-50px);}
+  25% {transform: rotateY(180deg) translateY(0px);}
+  35% {transform: rotateY(180deg) translateY(-50px);}
+  50% {transform: rotateY(180deg) translateY(0px);}
+  65% {transform: rotateY(180deg) translateY(-50px);}
+  75% {transform: rotateY(180deg) translateY(0px);}
+  85% {transform: rotateY(180deg) translateY(-50px);}
+  100% {transform: rotateY(180deg) translateY(0px);}
+}
+
+@keyframes shakeComputer {
+  0% {transform: translateY(0px);}
+  15% {transform: translateY(-50px);}
+  25% {transform: translateY(0px);}
+  35% {transform: translateY(-50px);}
+  50% {transform: translateY(0px);}
+  65% {transform: translateY(-50px);}
+  75% {transform: translateY(0px);}
+  85% {transform: translateY(-50px);}
+  100% {transform: translateY(0px);}
+}

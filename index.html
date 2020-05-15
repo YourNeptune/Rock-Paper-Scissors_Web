@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors</title>
+    <!-- Google Fonts: -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS stylesheet: -->
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <section class="game">
+      <!-- Score section: -->
+        <div class="score">
+            <div class="player-score">
+              <h2>Player</h2>
+              <p>0</p>
+            </div>
+            <div class="computer-score">
+                <h2>Computer</h2>
+                <p>0</p>
+            </div>
+        </div>
+
+        <!-- intro section: -->
+        <div class="intro">
+          <h1>Rock Paper and Scissors</h1>
+          <button class="playBtn">Let's Play</button>
+        </div>
+
+        <!-- Images and buttons section: -->
+        <div class="play">
+          <h2 class="winner">Choose an option</h2>
+          <div class="hands">
+            <img class="player-hand" src="./images/rock.png" alt="rock.png">
+            <img class="computer-hand" src="./images/rock.png" alt="rock.png">
+          </div>
+        </div>
+
+        <div class="option-buttons">
+          <div class="options">
+            <button>rock</button>
+            <button>paper</button>
+            <button>scissors</button>
+          </div>
+        </div>
+    </section>
+
+    <!-- Javascript file: app.js -->
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>

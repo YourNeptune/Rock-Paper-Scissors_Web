@@ -2,6 +2,7 @@ const game = () => {
   let playerScore = 0;
   let computerScore = 0;
 
+  const winner = document.querySelector(".winner");
     //Start the game:
     const startGame = () => {
 
@@ -47,6 +48,7 @@ const game = () => {
           //Reset the hand to rock every start time:
           playerHand.src = "./images/rock.png";
           computerHand.src = "./images/rock.png";
+          winner.innerHTML = " . . . ";
 
           //Update hand's image:
           setTimeout(() => {
@@ -73,7 +75,6 @@ const game = () => {
     //Compare the player's hand and computer's hands
     const compareResult = (pHand, cHand) =>{
       //Update winner:
-      const winner = document.querySelector(".winner");
       if(pHand === cHand){  //tie
         winner.innerHTML = "It'a tie";
         return;

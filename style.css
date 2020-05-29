@@ -122,3 +122,10 @@ div.fadeIn{
   85% {transform: translateY(-50px);}
   100% {transform: translateY(0px);}
 }
+
+.cpy{
+  color: #5f6769;
+  text-align: center;
+  position: relative;
+  margin-top: 100px;
+}

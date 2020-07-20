@@ -1,3 +1,4 @@
 # Rock-Paper-Scissors_Web
 Rock paper and scissors game (Web development)
-![](RockPaper&Scissors.gif)
+
+<img src="RockPaper&Scissors.gif" width="250" height="250">
